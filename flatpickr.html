@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flatpickr</title>
+  
+  <!-- flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+  <h1>flatpickrサンプル</h1>
+  <form action="">
+    <p><label for="flatpickr">日時選択</label></p>
+    <p><input type="text" id="flatpickr"></p>
+    <p><label for="limited-flatpickr">当日以降の日時選択</label></p>
+    <p><input type="text" id="limited-flatpickr"></p>
+    <p><label for="limited-flatpickr">当日以降の複数日時選択</label></p>
+    <p><input type="text" id="multiple-flatpickr"></p>
+  </form>
+
+  <cite>
+    <h2>参考</h2>
+    <ul>
+      <li>
+        <a href="https://deep-blog.jp/engineer/12729/#flatpickr%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">エンジニア足立のコーディング日記 flatpickr【デートピッカー用ライブラリ】</a>
+      </li>
+      <li><a href="https://cly7796.net/blog/javascript/try-using-flatpickr/">cly7796.net　flatpickrを使ってみる</a></li>
+    </ul>
+  </cite>
+
+  <script>flatpickr("#flatpickr", {});</script>
+  <script>flatpickr("#limited-flatpickr", {minDate:"today"});</script>
+  <script>flatpickr("#multiple-flatpickr", {minDate:"today",mode:"multiple"});</script>
+</body>
+</html>
+
+
+</head>
+<body>
+
+
