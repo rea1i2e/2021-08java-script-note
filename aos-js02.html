@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOS.js sample</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+
+<div class="fixed-area">
+  <header>
+    <h1>
+      <a href="#">AOS.jsにオプションを設定</a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="aos-js01.html#aos-js-sample01">シンプルなサンプル</a></li>
+        <li><a href="#aos-js-sample02">AOS.jsにオプションを設定</a></li>
+        <li><a href="index.html">JavaScript noteに戻る</a></li>
+      </ul>
+    </nav>
+  </header>
+</div><!-- /.fixed-area -->
+
+<body>
+  <section id="aos-js-point" class="contents-wrapper">
+    <h2><a href="#">AOS.jsにオプションを設定</a></h2>
+    <dl>
+      <dt>offset: 100,</dt>
+        <dd>アニメーションの開始位置（トリガーの元の位置より100px下に設定）</dd>
+    
+    <dt>delay: 0, </dt>
+        <dd>遅延 values from 0 to 3000, with step 50ms</dd>
+    
+    <dt>duration: 3000, </dt>
+        <dd>アニメーションにかける時間（3000ミリ秒かける）</dd>
+
+    <dt>easing: 'ease',</dt> 
+        <dd>アニメーションの仕方　default easing for AOS animations</dd>
+    
+    <dt>once: false,</dt> 
+        <dd>tureにすると、1回だけ実行され、falseだとずっと実行される</dd>
+    
+    <dt>mirror: false,</dt> 
+        <dd>要素をスクロールしながら、アニメーション化する必要があるかどうか</dd>
+    
+    <dt>anchorPlacement: 'top-bottom', </dt>
+        <dd>アニメーション開始のスクロール位置</dd>
+    </dl>
+    <p>下にスクロールすると、AOS.jpのオプションを使ったサンプルが表示されます</p>
+
+  </section>
+
+  <section id="aos-js-sample02" class="aos-js-sample contents-wrapper">
+  
+    <h2>AOS.jsのオプション</h2>
+    <ul class="aos-js-sample-list">
+      <li class="aos-js-sample-item">
+        <div class="aos-sample-box aos-sample-box01" data-aos="fade-right">01</div>
+        <div class="aos-js-sample-desc">
+          <h3>fade-right</h3>
+          <p>右方向にフェード表示</p>
+        </div>
+      </li>
+      
+      <li class="aos-js-sample-item">
+        <div class="aos-sample-box aos-sample-box02" data-aos="fade-left">02</div>
+        <div class="aos-js-sample-desc">
+          <h3>fade-left</h3>
+          <p>左方向にフェード表示</p>
+        </div>    
+      </li>
+      
+      <li class="aos-js-sample-item">
+        <div class="aos-sample-box aos-sample-box03" data-aos="fade-up">03</div>
+        <div class="aos-js-sample-desc">
+          <h3>fade-up</h3>
+          <p>上方向にフェード表示</p>
+        </div>    
+      </li>
+    </ul>
+  </section>
+  
+<section id="reference" class="contents-wrapper">
+    <h2>参考URL</h2>
+    <cite>
+      <ul>
+        <li><a href="https://github.com/michalsnik/aos">https://github.com/michalsnik/aos</a></li>
+        <li><a href="https://qumeru.com/magazine/400">qumeru magazine　AOS（aos.js）のオプションの使い方をご紹介！</a></li>
+      </ul>
+    </cite>
+  </section>
+
+  <!-- AOS.js -->
+  <script>
+  // AOS.init();
+  AOS.init({
+    offset: 100,
+    // アニメーションの開始位置（トリガーの元の位置より100px下に設定）
+    // offset (in px) from the original trigger point    
+    
+    delay: 0, 
+    // 遅延 values from 0 to 3000, with step 50ms
+    
+    duration: 3000, 
+    // アニメーションにかける時間（1000ミリ秒かける）
+    // values from 0 to 3000, with step 50ms
+
+    easing: 'ease', 
+    // アニメーションの仕方　default easing for AOS animations
+    
+    once: false, 
+    // tureにすると、1回だけ実行され、falseだとずっと実行される
+    // whether animation should happen only once - while scrolling down
+    
+    mirror: false, 
+    // 要素をスクロールしながら、アニメーション化する必要があるかどうか
+    // whether elements should animate out while scrolling past them
+    
+    anchorPlacement: 'top-bottom', 
+    // アニメーション開始のスクロール位置
+    // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%
+}
+
+body {
+  margin: 0;
+}
+
+/* headerを含む画面上部の領域を固定 */
+.fixed-area {
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  background: #fff;
+  width: 100%;
+  padding: 0 4%;
+}  
+
+header {
+  /* background: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}  
+
+nav {
+  width:60%;
+}
+
+nav ul {
+  /* background:olive; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding-left: 8px;
+}
+
+.contents-wrapper {
+  /* 上部に余白を作り、固定されたヘッダーに隠れないようにする */
+  padding: 100px 4% 0;
+}
+
+
+.aos-js-sample  {
+  /* スクロール後に現れるように調整 */
+  margin-top: 500px;
+}
+
+.aos-js-sample-list {
+  list-style: none;
+}
+
+.aos-js-sample-item {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.aos-sample-box {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 100px;
+}
+
+.aos-js-sample-desc {
+  margin-left: 16px;
+}
+
+.aos-sample-box01 {
+  background: hsl( 30, 60%, 60%);
+}
+
+.aos-sample-box02 {
+  background: hsl( 60, 60%, 60%);
+}
+
+.aos-sample-box03 {
+  background: hsl( 90, 60%, 60%);
+}
+
+/* #reference ************************************* */
+#reference {
+  min-height: 400px;
+}

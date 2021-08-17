@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOS.js sample</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+
+<div class="fixed-area">
+  <header>
+    <h1>
+      <a href="#">AOS.js</a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#aos-js-sample01">シンプルなサンプル</a></li>
+        <li><a href="aos-js02.html#aos-js-sample02">AOS.jsにオプションを設定</a></li>
+        <li><a href="index.html">JavaScript noteに戻る</a></li>
+      </ul>
+    </nav>
+  </header>
+</div><!-- /.fixed-area -->
+
+<body>
+  <section id="aos-js-point" class="contents-wrapper">
+    <h2>AOS.jsに関するポイント</h2>
+    <ul>
+      <li>ここにAOS.jsを導入するときのメモを記録</li>
+    </ul>
+    <p>下にスクロールすると、AOS.jpを使ったサンプルが表示されます</p>
+  </section>
+
+  <section id="aos-js-sample01" class="aos-js-sample contents-wrapper">
+  
+    <h2>AOS.jsを使ったサンプル</h2>
+    <ul class="aos-js-sample-list">
+      <li class="aos-js-sample-item">
+        <div class="aos-sample-box aos-sample-box01" data-aos="fade-right">01</div>
+        <div class="aos-js-sample-desc">
+          <h3>fade-right</h3>
+          <p>右方向にフェード表示</p>
+        </div>
+      </li>
+      
+      <li class="aos-js-sample-item">
+        <div class="aos-sample-box aos-sample-box02" data-aos="fade-left">02</div>
+        <div class="aos-js-sample-desc">
+          <h3>fade-left</h3>
+          <p>左方向にフェード表示</p>
+        </div>    
+      </li>
+      
+      <li class="aos-js-sample-item">
+        <div class="aos-sample-box aos-sample-box03" data-aos="fade-up">03</div>
+        <div class="aos-js-sample-desc">
+          <h3>fade-up</h3>
+          <p>上方向にフェード表示</p>
+        </div>    
+      </li>
+    </ul>
+  </section>
+  
+<section id="reference" class="contents-wrapper">
+    <h2>参考URL</h2>
+    <cite>
+      <ul>
+        <li><a href="https://github.com/michalsnik/aos">https://github.com/michalsnik/aos</a></li>
+        <li><a href="https://qumeru.com/magazine/400">qumeru magazine　AOS（aos.js）のオプションの使い方をご紹介！</a></li>
+      </ul>
+    </cite>
+  </section>
+
+  <!-- AOS.js -->
+  <script>AOS.init();</script>
+</body>
+</html>
