@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  padding:0;
 }
 
 /* headerを含む画面上部の領域を固定 */
@@ -21,19 +22,21 @@ body {
 }  
 
 header {
-  /* background: pink; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width:100%;
-}  
-
-nav {
-  width:60%;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+/* nav {
+  width:60%;
+} */
+
 nav ul {
-  /* background:olive; */
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -93,3 +96,180 @@ nav li {
 #reference {
   min-height: 400px;
 }
+
+/* **********
+index.html
+********** */
+
+/* index.html終わり */
+
+
+/* **********
+aos-js03.html
+********** */
+
+.aos-js03-section-wrapper h2 {
+  margin-top: 16px;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center bottom;
+  background-image: url(../img/main-visual.jpg);
+  min-height: 80vh;
+}
+
+.aos-js03-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aos-js03-wrapper p {
+  margin: 0;
+  padding: 32px;
+  /* background: #ccc; */
+}
+
+/* .aos-js03-header ***** */
+.first-header {
+  color: #fff;
+  width: 100%;
+}
+
+.cb-header {
+  background: #000;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  opacity: .7;
+  z-index: 1;
+}
+
+.aos-js03-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aos-js03-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.aos-js03-header nav li {
+  margin-left: 16px;
+}
+
+
+.aos-js03-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-desc {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 16px;
+  text-align: center;
+}
+
+.site-desc h2 {
+  font-size: 2rem;
+}
+
+.aos-js03-section-wrapper {
+  padding-top: 80px;
+}
+
+.fade-up-wrapper {
+  background-color: #ccc;
+}
+
+/* aos-js03.html終わり */
+
+/* **********
+aos-js04.html
+********** */
+
+.aos-js04-main-visual {
+  height: 100vh;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.aos-js04-header {
+  /* background: skyblue; */
+  width: 100%;
+  padding: 0 4%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.aos-js04-header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.aos-js04-header nav a {
+  text-decoration: none;
+  background: #fff;
+  color: #333;
+  padding: 4px;
+}
+
+.site-desc02 {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 16px;
+  text-align: center;
+}
+
+.shells h2 {
+  text-align: center;
+}
+
+.shells-wrapper {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+#s01 > div:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.shells-wrapper .desc {
+  padding: 32px;
+}
+.shell-img-wrapper {
+  /* background: #ccc; */
+  background: tomato;
+  /* 背景画像が画像からはみ出さないようにする */
+  height: fit-content; 
+}
+
+.shell-img-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit:cover;
+  vertical-align: middle;
+}
+
+
+
+/* aos-js04.html終わり */

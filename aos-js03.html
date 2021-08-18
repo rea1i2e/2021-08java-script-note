@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Production notes</title>
+  <link rel="icon" href="favicon.ico">
+
   
   <!-- リセットCSS -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
@@ -15,37 +17,43 @@
   <!-- jQyery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
  <div class="big-bg"><!-- 背景画像 -->
-  <header>
+  <header class="aos-js03-header">
       <!-- 最初に表示されるheader -->
       <div class="first-header">
-        <div class="header-wrapper wrapper">
-          <a href="#">
-            <h1>Web Production notes</h1>
-          </a>
+        <div class="aos-js03-header-wrapper aos-js03-wrapper">
+          <h1>
+            <a href="#">Web Production notes</a>
+          </h1>
           <nav>
             <ul>
               <li><a href="#html-css">HTML/CSS</a></li>
               <li><a href="#jquery">jQuery</a></li>
               <li><a href="#others">Others</a></li>
+              <li><a href="index.html">JavaScript note</a></li>
             </ul>
           </nav>
         </div>
       </div>
       <!-- スクロールすると表示されるヘッダー -->
       <div class="cb-header">
-        <div class="header-wrapper wrapper">
-          <a href="#">
-            <h1>Web Production notes</h1>
-          </a>
+        <div class="aos-js03-header-wrapper aos-js03-wrapper">
+          <h1>
+            <a href="#">Web Production notes</a>
+          </h1>
           <nav>
             <ul>
               <li><a href="#html-css">HTML/CSS</a></li>
               <li><a href="#jquery">jQuery</a></li>
               <li><a href="#others">Others</a></li>
+              <li><a href="index.html">JavaScript note</a></li>
             </ul>
           </nav>
         </div>
@@ -54,20 +62,25 @@
 
     <!-- サイトの説明 -->
     <div class="site-desc">
-     <h2>スクロールすると出現するヘッダーのサンプルページ</h2>
+     <h2>要素をふわっと表示させる<br>
+       AOS.jsのサンプル</h2>
     </div>
     
   </div><!-- /.big-bg -->
 
-  <section id="html-css" class="wrapper section-wrapper">
+  <section id="html-css" class="aos-js03-wrapper aos-js03-section-wrapper">
     <h2>HTML/CSS</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
+    <div class="fade-up-wrapper"  data-aos="fade-up">
+    <!-- <div> -->
+      <p data-aos="fade-up" data-aos-delay="1000">1秒遅れて表示<br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
+    </div>
   </section>
 
-  <section id="jquery" class="wrapper section-wrapper">
+  <section id="jquery" class="aos-js03-wrapper aos-js03-section-wrapper">
     <h2>jQuery</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
@@ -75,7 +88,7 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
   </section>
 
-  <section id="others" class="wrapper section-wrapper">
+  <section id="others" class="aos-js03-wrapper aos-js03-section-wrapper">
     <h2>Others</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt error maiores corporis inventore sit quidem alias esse eum tempore sint reiciendis, excepturi totam deleniti minima tenetur, amet nam ab animi.</p>
@@ -88,7 +101,7 @@
   </section>
 
   
-  <section class="wrapper">
+  <section class="aos-js03-wrapper">
     <cite>
       <h2>Reference</h2>
       <ul>
@@ -97,8 +110,12 @@
     </cite>
   </section>
 
+  
+  <!-- AOS.js -->
+  <!-- <script>AOS.init();</script> -->
+  <!-- script.jsの方に記述 -->
+  
   <!-- jQuery -->
   <script src="script.js"></script>
-
 </body>
 </html>
